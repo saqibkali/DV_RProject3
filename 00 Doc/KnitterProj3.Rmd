@@ -1,0 +1,57 @@
+Reproducing Project 3
+------------------------
+**By: Mitali Sathaye and Saqib Ali**
+
+
+Load Packages
+------
+```{r}
+source("../.rProfile", echo = FALSE)
+```
+
+These are the four databases that we are going to work with for our project.
+
+```{r}
+source("../01 Data/DataSubsets.R", echo = TRUE)
+```
+
+
+
+
+**INNER JOIN**
+Here we joined each of the four tables and wanted to see how much each sector (Urban vs Rural Vs National) from each country spent on only Jewelry
+```{r}
+source("../02 Data Wrangling/InnerJoin.R", echo = TRUE)
+```
+*Plot*
+```{r}
+source("../03 Visualizations/InnerJoinPlot.R", echo = TRUE)
+```
+
+
+**FULL JOIN**
+Here we are showing only the countries where the urban population spends more on both poultry and rice
+```{r}
+source("../02 Data Wrangling/FullJoin.R", echo = TRUE)
+```
+*Plot*
+```{r}
+source("../03 Visualizations/FullJoinPlot.R", echo = TRUE)
+```
+
+**LEFT JOIN**
+Here we are showing only the countries where the urban population spends more on tobacco but not necessarily on jewelry
+```{r}
+source("../02 Data Wrangling/LeftJoin.R", echo = TRUE)
+```
+*Plot*
+```{r}
+source("../03 Visualizations/LeftJoinPlot.R", echo = TRUE)
+```
+
+**CATEGORICALS PNG**
+This plot shows how much urbanites spent on jewelry. The .png is located in the DV_RProject3 folder.
+```{r}
+source("../02 Data Wrangling/Categoricals.r", echo = TRUE)
+```
+
